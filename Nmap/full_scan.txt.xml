@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Sat Sep 26 04:30:55 2026 as: /usr/lib/nmap/nmap -&#45;privileged -sV -p- -oA full_scan.txt 192.168.188.131/24 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -&#45;privileged -sV -p- -oA full_scan.txt 192.168.188.131/24" start="1790411455" startstr="Sat Sep 26 04:30:55 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.188.2" addrtype="ipv4"/>
+<address addr="00:50:56:FD:96:40" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.188.1" addrtype="ipv4"/>
+<address addr="00:50:56:C0:00:08" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.188.131" addrtype="ipv4"/>
+<address addr="00:0C:29:A3:15:47" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.188.254" addrtype="ipv4"/>
+<address addr="00:50:56:EA:89:F5" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskprogress task="ARP Ping Scan" time="1790411458" percent="90.39" remaining="1" etc="1790411458"/>
+<taskprogress task="SYN Stealth Scan" time="1790411459" percent="0.17"/>
+<taskprogress task="SYN Stealth Scan" time="1790411459" percent="0.60"/>
+<taskprogress task="SYN Stealth Scan" time="1790411460" percent="1.37" remaining="73" etc="1790411532"/>
+<host starttime="1790411459" endtime="1790411560"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.188.1" addrtype="ipv4"/>
+<address addr="00:50:56:C0:00:08" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65535">
+<extrareasons reason="no-response" count="65535" proto="tcp" ports="1-65535"/>
+</extraports>
+</ports>
+<times srtt="756" rttvar="5000" to="100000"/>
+</host>
+<host starttime="1790411459" endtime="1790411567"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.188.2" addrtype="ipv4"/>
+<address addr="00:50:56:FD:96:40" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65534">
+<extrareasons reason="reset" count="65534" proto="tcp" ports="1-52,54-65535"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="domain" product="dnsmasq" version="2.45" method="probed" conf="10"><cpe>cpe:/a:thekelleys:dnsmasq:2.45</cpe></service></port>
+</ports>
+<times srtt="435" rttvar="167" to="100000"/>
+</host>
+<host starttime="1790411459" endtime="1790411550"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.188.131" addrtype="ipv4"/>
+<address addr="00:0C:29:A3:15:47" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65535">
+<extrareasons reason="reset" count="65535" proto="tcp" ports="1-65535"/>
+</extraports>
+</ports>
+<times srtt="592" rttvar="235" to="100000"/>
+</host>
+<host starttime="1790411459" endtime="1790411560"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.188.254" addrtype="ipv4"/>
+<address addr="00:50:56:EA:89:F5" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65535">
+<extrareasons reason="no-response" count="65535" proto="tcp" ports="1-65535"/>
+</extraports>
+</ports>
+<times srtt="240" rttvar="2233" to="100000"/>
+</host>
+<host starttime="1790411567" endtime="1790411680"><status state="up" reason="localhost-response" reason_ttl="0"/>
+<address addr="192.168.188.128" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-response" count="65533" proto="tcp" ports="1-20,22-79,81-65535"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" product="vsftpd" version="3.0.5" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:3.0.5</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apache httpd" version="2.4.68" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.68</cpe></service></port>
+</ports>
+<times srtt="206" rttvar="154" to="100000"/>
+</host>
+<runstats><finished time="1790411680" timestr="Sat Sep 26 04:34:40 2026" summary="Nmap done at Sat Sep 26 04:34:40 2026; 256 IP addresses (5 hosts up) scanned in 225.34 seconds" elapsed="225.34" exit="success"/><hosts up="5" down="251" total="256"/>
+</runstats>
+</nmaprun>

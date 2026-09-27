@@ -1,0 +1,36 @@
+# Nmap 7.99 scan initiated Sat Sep 26 04:30:55 2026 as: /usr/lib/nmap/nmap --privileged -sV -p- -oA full_scan.txt 192.168.188.131/24
+Nmap scan report for 192.168.188.1
+Host is up (0.00076s latency).
+All 65535 scanned ports on 192.168.188.1 are in ignored states.
+Not shown: 65535 filtered tcp ports (no-response)
+MAC Address: 00:50:56:C0:00:08 (VMware)
+
+Nmap scan report for 192.168.188.2
+Host is up (0.00044s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+53/tcp open  domain  dnsmasq 2.45
+MAC Address: 00:50:56:FD:96:40 (VMware)
+
+Nmap scan report for 192.168.188.131
+Host is up (0.00059s latency).
+All 65535 scanned ports on 192.168.188.131 are in ignored states.
+Not shown: 65535 closed tcp ports (reset)
+MAC Address: 00:0C:29:A3:15:47 (VMware)
+
+Nmap scan report for 192.168.188.254
+Host is up (0.00024s latency).
+All 65535 scanned ports on 192.168.188.254 are in ignored states.
+Not shown: 65535 filtered tcp ports (no-response)
+MAC Address: 00:50:56:EA:89:F5 (VMware)
+
+Nmap scan report for 192.168.188.128
+Host is up (0.00021s latency).
+Not shown: 65533 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.5
+80/tcp open  http    Apache httpd 2.4.68 ((Debian))
+Service Info: OS: Unix
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Sep 26 04:34:40 2026 -- 256 IP addresses (5 hosts up) scanned in 225.34 seconds

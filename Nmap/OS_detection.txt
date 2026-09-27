@@ -1,0 +1,51 @@
+# Nmap 7.99 scan initiated Sat Sep 26 04:33:22 2026 as: /usr/lib/nmap/nmap -O -oN OS_detection.txt 192.168.188.131/24
+Nmap scan report for 192.168.188.1
+Host is up (0.0035s latency).
+All 1000 scanned ports on 192.168.188.1 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 00:50:56:C0:00:08 (VMware)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.188.2
+Host is up (0.0017s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE
+53/tcp open  domain
+MAC Address: 00:50:56:FD:96:40 (VMware)
+Device type: specialized|general purpose
+Running (JUST GUESSING): VMware Player (90%), Microsoft Windows XP|7|2012 (86%)
+OS CPE: cpe:/a:vmware:player cpe:/o:microsoft:windows_xp::sp3 cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows_server_2012
+Aggressive OS guesses: VMware Player virtual NAT device (90%), Microsoft Windows XP SP3 or Windows 7 or Windows Server 2012 (86%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.188.131
+Host is up (0.00099s latency).
+All 1000 scanned ports on 192.168.188.131 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 00:0C:29:A3:15:47 (VMware)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.188.254
+Host is up (0.00034s latency).
+All 1000 scanned ports on 192.168.188.254 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 00:50:56:EA:89:F5 (VMware)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.188.128
+Host is up (0.00015s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT   STATE SERVICE
+21/tcp open  ftp
+80/tcp open  http
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 2.6.32 (92%), Fortinet FortiGate-60B or -100A firewall (92%), Cisco Unified Communications Manager VoIP adapter (89%), Android 7.1.2 (Linux 3.10) (89%), DD-WRT v23 (Linux 2.4.36) (89%), Vyatta router (Linux 2.6.26) (89%), Linux 2.6.18 (89%), Linux 3.2.0 (89%), Linux 5.18 (89%), Linux 5.4 (89%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 0 hops
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Sep 26 04:33:45 2026 -- 256 IP addresses (5 hosts up) scanned in 23.16 seconds

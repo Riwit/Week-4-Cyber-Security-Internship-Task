@@ -1,0 +1,12 @@
+# Nmap 7.99 scan initiated Sat Sep 26 04:30:55 2026 as: /usr/lib/nmap/nmap --privileged -sV -p- -oA full_scan.txt 192.168.188.131/24
+Host: 192.168.188.1 ()	Status: Up
+Host: 192.168.188.1 ()	Ports: 	Ignored State: filtered (65535)
+Host: 192.168.188.2 ()	Status: Up
+Host: 192.168.188.2 ()	Ports: 53/open/tcp//domain//dnsmasq 2.45/	Ignored State: closed (65534)
+Host: 192.168.188.131 ()	Status: Up
+Host: 192.168.188.131 ()	Ports: 	Ignored State: closed (65535)
+Host: 192.168.188.254 ()	Status: Up
+Host: 192.168.188.254 ()	Ports: 	Ignored State: filtered (65535)
+Host: 192.168.188.128 ()	Status: Up
+Host: 192.168.188.128 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.5/, 80/open/tcp//http//Apache httpd 2.4.68 ((Debian))/	Ignored State: filtered (65533)
+# Nmap done at Sat Sep 26 04:34:40 2026 -- 256 IP addresses (5 hosts up) scanned in 225.34 seconds
